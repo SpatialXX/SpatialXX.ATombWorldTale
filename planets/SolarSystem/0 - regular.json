@@ -1,0 +1,41 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "Regularity",
+	"starSystem": "SolarSystem",
+	"Base": {
+		"surfaceGravity": 9,
+		"surfaceSize": 200,
+		"hasMapMarker": true,
+		"gravityFallOff": "inverseSquared",
+	},
+	"Orbit": {
+		"staticPosition": {
+			"x":500000,
+			"y":0,
+			"z":0
+		},
+		"semiMajorAxis": 10000,
+		"trueAnomaly": 0,
+		"primaryBody": "Sun",
+		"isTidallyLocked": false,
+		"isMoon": false,
+		"siderealPeriod": 2.5,
+		"tint": {
+			"r": 125,
+			"g": 35,
+			"b": 35,
+			"a": 255
+		},
+		"isStatic": true
+	},
+	"Props": {
+		"singularities": [
+			{
+				"type": "blackHole",
+				"horizonRadius": 2000,
+				"distortRadius": 5000,
+				"targetStarSystem": "SpatialXX.TombSystem"
+			}
+		]
+	}
+}

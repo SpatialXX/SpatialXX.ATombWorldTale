@@ -1,0 +1,39 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "SPAWN",
+	"starSystem": "SpatialXX.TombSystem",
+	
+	"Base": {
+		"surfaceGravity": 0,
+		"surfaceSize": 0,
+		"hasMapMarker": false
+	},
+	"Orbit": {
+		"semiMajorAxis": 1500,
+		"inclination": 0,
+		"primaryBody": "Lost Fog",
+		"trackingOrbitLine": true,
+		"tint": {
+			"r": 0,
+			"g": 0,
+			"b": 0,
+			"a": 255
+		}
+	},
+	"Star": {
+		"size": 1,
+		"tint": {
+			"r": 255,
+			"g": 0,
+			"b": 0,
+			"a": 255
+		},
+		"solarLuminosity": 1,
+		"lightRadius": 1000
+	},
+	"ShipLog": {
+		"mapMode": {
+			"remove": true
+		}
+	}
+}

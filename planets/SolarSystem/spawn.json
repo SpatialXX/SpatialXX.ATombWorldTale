@@ -1,0 +1,29 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "SPAWNBYSPATIALX",
+	"starSystem": "EyeOfTheUniverse",
+	"Spawn": {
+		"playerSpawnPoint": {
+			"x": 0,
+			"y": 260,
+			"z": 0
+		}
+	},
+	"Base": {
+		"surfaceGravity": 0,
+		"surfaceSize": 0,
+		"hasMapMarker": true
+	},
+	"Orbit": {
+		"semiMajorAxis": 10000,
+		"inclination": 45,
+		"primaryBody": "Vessel_Body",
+		"trackingOrbitLine": true,
+		"tint": {
+			"r": 0,
+			"g": 0,
+			"b": 0,
+			"a": 255
+		}
+	}
+}
