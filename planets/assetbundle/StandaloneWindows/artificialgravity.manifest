@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 339605665
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d552f9e768a6f90774491bd430695f9e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: aac3ae825a88d58c2efbc5495a4f623e
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d552f9e768a6f90774491bd430695f9e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 58d6d6c9bd02f18e91cd40b849a10e0c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f913c288c393f80a7e923fc1c775f4fb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7f2e3f7cc6baeb3499f9963353d7b458, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: DynamicOccupantMask
+Assets:
+- Assets/Examples/ArtificialGravity.prefab
+Dependencies: []
