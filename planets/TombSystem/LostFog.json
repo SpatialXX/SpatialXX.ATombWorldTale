@@ -3,7 +3,7 @@
 	"name": "Lost Fog",
 	"starSystem": "SpatialXX.TombSystem",
 	"Base": {
-		"surfaceGravity": 0,
+		"surfaceGravity": 15,
 		"surfaceSize": 500,
 		"hasMapMarker": true,
 		"ambientLight": 1,
@@ -93,14 +93,340 @@
 	"Props": {
 		"details": [
 			{
+				"assetBundle": "planets/assetbundle/simpletemperaturezone",
+				"path": "Assets/PREFABS/simpletemperaturezone.prefab",
+				"position": {
+					"x": 400,
+					"y": 0,
+					"z": 15
+				},
+				"scale": 1,
+				"rename": "SPXWarmEnough",
+				"alignRadial": true
+			},
+			{
+				"assetBundle": "planets/assetbundle/simpletemperaturezone",
+				"path": "Assets/PREFABS/simpletemperaturezone.prefab",
+				"position": {
+					"x": 400,
+					"y": 15,
+					"z": 0
+				},
+				"scale": 1,
+				"rename": "SpxVeryCold",
+				"alignRadial": true
+			},
+			
+			{
+
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_VillageCemetery/Props_VillageCemetery/OtherComponentsGroup/Props_HEA_Axe",
+				"rename": "SPXFogAxe",
+				"keepLoaded": true,
+				"position": {
+					"x": 400,
+					"y": 1,
+					"z": 0
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0.05, "y": -0.15, "z": -0.1},
+					"holdRotation": {"x": 230, "y": 0, "z": 0},
+					"dropOffset": {"x": 0, "y": 0.4, "z": 0},
+					"pickupAudio": "Raft_Impact_Light",
+					"dropAudio": "Raft_Impact_Medium"
+					
+					
+					///Raft_Impact_Heavy Couper du bois		Raft_Impact_Medium Couper du bois moins violent		Raft_Impact_Light	TH_WoodCarving
+				}
+			},
+			
+			{
+
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteCookingStand/Props_HEA_Wrench",
+				"rename": "SPXWrench",
+				"keepLoaded": true,
+				"position": {
+					"x": 400,
+					"y": 1,
+					"z": 0
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0.05, "y": 0.02, "z": -0.2},
+					"holdRotation": {"x": 0, "y": 270, "z": 0},
+					"pickupAudio": "TH_WoodCarving",
+					"dropAudio": "Door_Metal_OpenStop"
+				}
+			},
+			
+			{
+
+				"path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Props_Crossroads/OtherComponentsGroup/Reibeck_Camp/Props_HEA_CampsiteCookingStand/Props_HEA_Teapot",
+				
+				////////Ship_Body/Module_Supplies/Systems_Supplies/ExpeditionGear/EquipmentGeo/Props_HEA_PlayerSuit_Hanging/   PlayerSuit_Hatchet	PlayerSuit_Flask	PlayerSuit_Spool
+				
+				"rename": "SPXTeaTime",
+				"keepLoaded": true,
+				"position": {
+					"x": 400,
+					"y": 1,
+					"z": 1
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0, "y": 0, "z": 0},
+					"holdRotation": {"x": 0, "y": 0, "z": 0},
+					"pickupAudio": "Door_Metal_CloseStart",
+					"dropAudio": "Door_Metal_CloseStop"
+				}
+			},
+			
+			{
+				"path": "Ship_Body/Module_Supplies/Systems_Supplies/ExpeditionGear/EquipmentGeo/Props_HEA_PlayerSuit_Hanging/PlayerSuit_Hatchet",
+				"rename": "SPXHatchling",
+				"keepLoaded": true,
+				"position": {	"x": 400,	"y": -2,	"z": 1},
+				"rotation": {	"x": 0,		"y": 0.2,		"z": -0.25},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0, "y": 0, "z": 0},
+					"holdRotation": {"x": 0, "y": 0, "z": 0},
+					"pickupAudio": "Door_Metal_OpenStart",
+					"dropAudio": "Door_Metal_OpenStop"
+				}
+			},
+			
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Geometry_Observatory/Structure_HEA_Observatory_v3/ObservatoryPivot/Observatory_Exterior/Exterior_BottomFloor/ExteriorEntrance_Flag",
+				"rename": "SPXExtFlag",
+				"keepLoaded": true,
+				"position": {	"x": 400,	"y": -5,	"z": 1},
+				"rotation": {	"x": 0,		"y": 0,		"z": 0},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0.1, "y": -0.15, "z": -0.05},
+					"holdRotation": {"x": 230, "y": 0, "z": 0},
+					"pickupAudio": "Door_Metal_CloseStart",
+					"dropAudio": "Door_Metal_CloseStop"
+				}
+			},
+			
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Geometry_Observatory/Structure_HEA_Observatory_v3/ObservatoryPivot/Observatory_Exterior/Exterior_TopFloor/ExteriorTopFloor_Flag",
+				"rename": "SPXTopFlag",
+				"keepLoaded": true,
+				"position": {	"x": 400,	"y": -5,	"z": 1},
+				"rotation": {	"x": 0,		"y": 0,		"z": 0},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0.1, "y": -0.15, "z": -0.05},
+					"holdRotation": {"x": 230, "y": 0, "z": 0},
+					"pickupAudio": "ToolProbeRetrieve",
+					"dropAudio": "ToolProbeLaunch"
+				}
+			},
+			
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Kids_Hidden/Prefab_HideAndSeekRadio/Props_HEA_Radio/Props_HEA_Radio_Geo",
+				"rename": "SPXRadio",
+				"keepLoaded": true,
+				"position": {	"x": 400,	"y": -8,	"z": 1},
+				"rotation": {	"x": 0,		"y": 0,		"z": 0},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0.2, "y": 0, "z": 0.4},
+					"holdRotation": {"x": 0, "y": 250, "z": 0},
+					"dropOffset": {"x": 0, "y": 0.35, "z": 0},
+					"colliderRadius": 0.5,
+					"interactRange": 3,
+					"pickupAudio": "TH_ProjectorActivate",
+					"dropAudio": "TH_ProjectorStop"
+				}
+			},
+			
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Props_StartingCamp/OtherComponentsGroup/Props_HEA_CampsiteCookingStand/Props_HEA_SardineCanOpened",
+				"rename": "Sardine",
+				"keepLoaded": true,
+				"position": {	"x": 400,	"y": -5,	"z": 1},
+				"rotation": {	"x": 0,		"y": 0,		"z": 0},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0, "y": 0, "z": -0},
+					"holdRotation": {"x": 0, "y": 0, "z": 0},
+					"pickupAudio": "TH_LiftActivate",
+					"dropAudio": "TH_LiftArrives"
+				}
+			},
+			
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Props_StartingCamp/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_TallBottle1",
+				"rename": "Scrumpy",
+				"keepLoaded": true,
+				"position": {	"x": 400,	"y": -5,	"z": 1},
+				"rotation": {	"x": 0,		"y": 0,		"z": 0},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0, "y": 0, "z": -0},
+					"holdRotation": {"x": 0, "y": 0, "z": 0},
+					"pickupAudio": "TimelineEndEffect_Cracks",
+					"dropAudio": "TimelineEndEffect_Shatter"
+				}
+			},
+			
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Props_StartingCamp/OtherComponentsGroup/Props_HEA_CampsiteTableSetting/Props_HEA_ShortBottle1",
+				"rename": "Scrumpy2",
+				"keepLoaded": true,
+				"position": {	"x": 400,	"y": -5,	"z": 1},
+				"rotation": {	"x": 0,		"y": 0,		"z": 0},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0, "y": 0, "z": -0},
+					"holdRotation": {"x": 0, "y": 0, "z": 0},
+					"pickupAudio": "Death_Instant",
+					"dropAudio": "Death_Self"
+				}
+			},
+			
+			{
+				"path": "DreamWorld_Body/Sector_DreamWorld/Sector_DreamZone_3/Simulation_DreamZone_3/Sector_Hotel/Props_Hotel/Depths/Bedroom_Upper/SpintheBottle",
+				"rename": "AlienScrumpy",
+				"keepLoaded": true,
+				"position": {	"x": 400,	"y": -5,	"z": 1},
+				"rotation": {	"x": 0,		"y": 0,		"z": 0},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0.1, "y": -0.15, "z": -0.05},
+					"holdRotation": {"x": 230, "y": 0, "z": 0},
+					"pickupAudio": "ToolProbeRetrieve",
+					"dropAudio": "ToolProbeLaunch"
+				}
+			},
+			
+			{
+				"path": "Moon_Body/Sector_THM/Interactables_THM/Props_HEA_MarshmallowCanBad",
+				"rename": "Yammy",
+				"keepLoaded": true,
+				"position": {	"x": 400,	"y": -5,	"z": 1},
+				"rotation": {	"x": 0,		"y": 0,		"z": 0},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0.1, "y": -0.15, "z": -0.05},
+					"holdRotation": {"x": 230, "y": 0, "z": 0},
+					"pickupAudio": "ToolProbeRetrieve",
+					"dropAudio": "ToolProbeLaunch"
+				}
+			},
+			
+			{
+				"path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Geo_RadioTower/OtherComponentsGroup/Structure_HEA_RadioTower (1)/RadioTower/radiotower_radar_dish_A",
+				"rename": "DeepRadio",
+				"keepLoaded": true,
+				"position": {	"x": 400,	"y": -5,	"z": 1},
+				"rotation": {	"x": 0,		"y": 0,		"z": 0},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0.1, "y": -0.15, "z": -0.05},
+					"holdRotation": {"x": 230, "y": 0, "z": 0},
+					"pickupAudio": "ToolProbeRetrieve",
+					"dropAudio": "ToolProbeLaunch"
+				}
+			},
+			
+			{
+
+				"path": "Ship_Body/Module_Supplies/Systems_Supplies/ExpeditionGear/EquipmentGeo/Props_HEA_PlayerSuit_Hanging/PlayerSuit_Spool",
+				
+				////////Ship_Body/Module_Supplies/Systems_Supplies/ExpeditionGear/EquipmentGeo/Props_HEA_PlayerSuit_Hanging/   PlayerSuit_Hatchet	PlayerSuit_Flask	PlayerSuit_Spool
+				///Possible asset cool : paniers a poissons / poissons / échelles / bateau / antennes / radio / Bidon vin / sceau vin / panneaux solaires / générateur manivelle / bouteilles / Jumbo
+				///Scout ? / Hâche / Pioche / Lit / Coussins / Cagette de petites fioles / Vaiselle / Feuilles / Porte Thé / Marmites / Conserve / Plantes en pot / Chail Radio / Tas de bois
+				///Geyser Flag		Funnel		Observatory flag		Dish
+				
+				
+				///Sleepy 	Campsite_Pillow1	Campsite_Pillow2	Props_HEA_CampsiteSleepingBag
+				///Cuisine	Props_HEA_Glass		Props_HEA_MarshmallowStick		Props_HEA_MarshmallowCanOpened		Props_HEA_Flask1		Props_HEA_LargePlate1	Props_HEA_MarshmallowCanClosed1		Props_HEA_Spork1
+				///Cuisine	Props_HEA_Mug1		Props_HEA_ShortBottle1		Props_HEA_ShortPot1		Props_HEA_SmallPlate1	Props_HEA_TallPot1		Props_HEA_WoodenCrate2		Props_HEA_TallBottle1
+				///Cuisine	Props_HEA_BigCookingPot		Props_HEA_Soup		Props_HEA_SardineSkeleton2		Props_HEA_SardineCanOpened		Props_HEA_SardineCanClosed		Props_HEA_SmallCookingPot
+				///Cuisine	Props_HEA_Teapot	Props_HEA_TeapotTop		Props_HEA_SmallCookingPotTop	Props_HEA_Ladle		Props_HEA_Mug1		Props_HEA_BarrelTall	Props_HEA_BarrelShort
+				///Bois		Props_TH_Log		LumberPile	woodenPlanks		Tree_TH_Stump	Props_HEA_CampsiteLogAssets (1)		Props_HEA_SawBuck	Structure_HEA_Fence (10)
+				///bois		LogLift_Lift		WaterWheel_VillagePlanks		radiocabin_entranceramp		Prefab_HEA_VillagePlank (101)		Props_HEA_CampfireLogs (1)
+				///Escalade		Props_HEA_Carabiner1
+				///Techno	Props_HEA_Projector_StelliteDish		radiotower_radar_dish_A		radiotower_radar_dish_B		radiocabin_solarpanels		radiocabin_generator	Props_HEA_Radio
+				///Techno 	Prefab_HEA_FuelTank (1)		Props_HEA_MarshmallowCanBad
+				///Autre	Prop_HEA_Paper		Props_HEA_Nail2		ExteriorEntrance_Flag		ExteriorTopFloor_Flag		radiocabin_ropenet		Props_HEA_RockingChair
+				
+				
+				
+				"rename": "SPXHatchling",
+				"keepLoaded": true,
+				"position": {
+					"x": 400,
+					"y": -2,
+					"z": 1
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"item": {
+					"name": "Axe",
+					"itemType": "Decoration", 
+					"holdOffset": {"x": 0.1, "y": -0.15, "z": -0.05},
+					"holdRotation": {"x": 230, "y": 0, "z": 0},
+					"pickupAudio": "ToolProbeRetrieve",
+					"dropAudio": "ToolProbeLaunch"
+				}
+			},
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			{
 				"assetBundle": "planets/assetbundle/stone_shared",
 				"path": "Assets/PREFABS/Stone_shared.prefab",
 				"position": {
-					"x": 403,
+					"x": 2403,
 					"y": 8,
 					"z": 8
 				},
-				"scale": 10,
+				"scale": 1,
 				"rename": "SPXArtGrav",
 				"alignRadial": true
 			},
@@ -108,7 +434,7 @@
 				"assetBundle": "planets/assetbundle/stone_shared",
 				"path": "Assets/PREFABS/Stone_shared.prefab",
 				"position": {
-					"x": 403,
+					"x": 2403,
 					"y": 15,
 					"z": 15
 				},
@@ -117,26 +443,15 @@
 					"y": 0,
 					"z": 90
 				},
-				"scale": 10,
-				"rename": "SPXArtGrav",
-				"alignRadial": true
-			},
-			{
-				"assetBundle": "planets/assetbundle/stone_shared",
-				"path": "Assets/PREFABS/Stone_shared.prefab",
-				"position": {
-					"x": 703,
-					"y": 8,
-					"z": 8
-				},
-				"scale": 10,
-				"rename": "SPXArtGrav",
+				"scale": 1,
+				"rename": "SPXArtGrav1",
 				"alignRadial": true
 			}
 		]
 	},
 	
 	"Volumes": {
+		
 		"interferenceVolumes": [
 			{
 				"radius": 600
@@ -179,7 +494,15 @@
 			}
 			]
 		},
-		
+		"audioVolumes": [
+			{
+				"audio": "planets/assets/THIce.mp3",
+				"loop": false,
+				"radius": 600,
+				"volume":1,
+				"track": "music"
+			}
+		],
 		"audioVolumes": [
 			{
 				"audio": "GD_Tornado_LP",
