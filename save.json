@@ -1,0 +1,15 @@
+{
+  "DaysSlept": 6.0,
+  "Forest_SpeTree": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "Forest_CuttedTrees": [
+    3,
+    0,
+    0,
+    0
+  ]
+}

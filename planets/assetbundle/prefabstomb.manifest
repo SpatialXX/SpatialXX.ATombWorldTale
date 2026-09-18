@@ -1,0 +1,93 @@
+ManifestFileVersion: 0
+CRC: 4288830787
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 56654fd794c4df587036bfdcef276017
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 714997fc8d8a2e3ce80063051da0e504
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 1023177636, guid: c826f8c462ba3144dac8244eba5ef2e6, type: 3}
+- Class: 114
+  Script: {fileID: 1439587604, guid: c826f8c462ba3144dac8244eba5ef2e6, type: 3}
+- Class: 114
+  Script: {fileID: -1076863867, guid: c826f8c462ba3144dac8244eba5ef2e6, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 120
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/prefabsTomb/engine.prefab
+- Assets/prefabsTomb/Eye.prefab
+- Assets/prefabsTomb/TRANS OPP.mat
+- Assets/prefabsTomb/rect.prefab
+- Assets/prefabsTomb/star.prefab
+- Assets/prefabsTomb/num/zero.prefab
+- Assets/prefabsTomb/Materials/stop gap transparent 2.mat
+- Assets/prefabsTomb/universeCreation/uc2.prefab
+- Assets/prefabsTomb/TRANSFADE.mat
+- Assets/prefabsTomb/universeCreation/uc3.prefab
+- Assets/prefabsTomb/num/seven.prefab
+- Assets/prefabsTomb/num/ten.prefab
+- Assets/prefabsTomb/stop gap transparent.png
+- Assets/prefabsTomb/bigB.prefab
+- Assets/prefabsTomb/universeCreation/uc0.prefab
+- Assets/prefabsTomb/num/four.prefab
+- Assets/prefabsTomb/CubeTransFade.prefab
+- Assets/prefabsTomb/lineTracer/lineTrace.prefab
+- Assets/prefabsTomb/cloud3.prefab
+- Assets/prefabsTomb/lineTracer/Univ.prefab
+- Assets/prefabsTomb/universeCreation/uc7.prefab
+- Assets/prefabsTomb/universeCreation/uc1.prefab
+- Assets/prefabsTomb/num/five.prefab
+- Assets/prefabsTomb/nova1.prefab
+- Assets/prefabsTomb/num/three.prefab
+- Assets/prefabsTomb/universeCreation/uc5.prefab
+- Assets/prefabsTomb/universeCreation/uc9.prefab
+- Assets/prefabsTomb/nova2.prefab
+- Assets/prefabsTomb/num/eight.prefab
+- Assets/prefabsTomb/num/two.prefab
+- Assets/prefabsTomb/TRANSTRANS.mat
+- Assets/prefabsTomb/num/twelve.prefab
+- Assets/prefabsTomb/lineTracer/LineMat.mat
+- Assets/prefabsTomb/universeCreation/uc4.prefab
+- Assets/prefabsTomb/planet.prefab
+- Assets/prefabsTomb/num/nine.prefab
+- Assets/prefabsTomb/stop gap transparent 2.png
+- Assets/prefabsTomb/num/six.prefab
+- Assets/prefabsTomb/sphere_dot.prefab
+- Assets/prefabsTomb/universeCreation/uc6.prefab
+- Assets/prefabsTomb/Materials/stop gap transparent.mat
+- Assets/prefabsTomb/star (2).prefab
+- Assets/prefabsTomb/num/okay.prefab
+- Assets/prefabsTomb/Materials/stop gap transparent 1.mat
+- Assets/prefabsTomb/num/not_okay.prefab
+- Assets/prefabsTomb/num/eleven.prefab
+- Assets/prefabsTomb/most transparent.png
+- Assets/prefabsTomb/universeCreation/uc8.prefab
+- Assets/prefabsTomb/num/one.prefab
+- Assets/prefabsTomb/cloud1.prefab
+- Assets/prefabsTomb/CubeTransOpp.prefab
+- Assets/prefabsTomb/CubeTransTrans.prefab
+- Assets/prefabsTomb/cloud2.prefab
+Dependencies: []

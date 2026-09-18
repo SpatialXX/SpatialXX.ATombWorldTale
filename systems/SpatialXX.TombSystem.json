@@ -1,15 +1,110 @@
 {
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
 	"canEnterViaWarpDrive": true,
 	"startHere": true,
-	"respawnHere":true,
-	"coords": {
-		"x": [ 4, 3 ],
-		"y": [ 2, 4 ],
-		"z": [ 4, 2 ]
+	"mapRestricted": true,
+	"enableTimeLoop": false,
+	"Skybox": {
+		"destroyStarField": true,
+		"rightPath": "systems/NewSystemAssets/TriStar_Large.png",
+		"leftPath": "systems/NewSystemAssets/Down_Large.png",
+		"topPath": "systems/NewSystemAssets/Stranger_Large.png",
+		"bottomPath": "systems/NewSystemAssets/Down_Large.png",
+		"frontPath": "systems/NewSystemAssets/Down_Large.png",
+		"backPath": "systems/NewSystemAssets/FarStar_Large.png"
 	},
-	"vesselPosition": {
-		"x": 0,
-		"y": 0,
-		"z": 8000
-	}
+	"factRequiredForWarp": "CONCERT_HALL_ENTRY_FC",
+	"initialReveal": [ "CONCERT_HALL_ENTRY_FC" ],
+	"curiosities": [
+		{
+			"id": "HEARTHIANS_CAMPS",
+			"color": {
+				"r": 102,
+				"g": 47,
+				"b": 196,
+				"a": 255
+			},
+			"highlightColor": {
+				"r": 134,
+				"g": 79,
+				"b": 227,
+				"a": 255
+			}
+		}
+	],
+	"entryPositions": [
+		{
+			"id": "CONCERT_HALL_ENTRY_FC",
+			"position": {
+				"x": 0,
+				"y": 0
+			}
+		}, 
+		{
+			"id": "CHERT_SHIP_LOGS_FC",
+			"position": {
+				"x": 200,
+				"y": 0
+			}
+		},
+		
+		{
+			"id": "RIEBECK_SHIP_LOGS_FC",
+			"position": {
+				"x": 400,
+				"y": 0
+			}
+		},
+		
+		{
+			"id": "GABBRO_SHIP_LOGS_FC",
+			"position": {
+				"x": 600,
+				"y": 0
+			}
+		},
+		
+		{
+			"id": "CRASH_SITE_LOGS_FC",
+			"position": {
+				"x": 0,
+				"y": 200
+			}
+		}, 
+		
+		{
+			"id": "SPECICES_EXPLOSION_LOGS_FC",
+			"position": {
+				"x": 0,
+				"y": -200
+			}
+		}, 
+		
+		{
+			"id": "SPECICES_PHYSIC_LOGS_FC",
+			"position": {
+				"x": 200,
+				"y": -200
+			}
+		},
+		
+		{
+			"id": "SPECICES_PLANT_LOGS_FC",
+			"position": {
+				"x": 400,
+				"y": -200
+			}
+		},
+		
+		{
+			"id": "SPECICES_WATER_LOGS_FC",
+			"position": {
+				"x": 600,
+				"y": -200
+			}
+		}
+		
+	
+		
+	]
 }

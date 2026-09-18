@@ -2,23 +2,34 @@
 	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
 	"name": "Lost Fog",
 	"starSystem": "SpatialXX.TombSystem",
+	"canShowOnTitle": "false",
 	"Base": {
 		"surfaceGravity": 15,
-		"surfaceSize": 500,
+		"surfaceSize": 550,
 		"hasMapMarker": true,
 		"ambientLight": 1,
 		"centerOfSolarSystem": true
 	},
 	
+	"ShipLog": {
+		"xmlFile": "planets/TombSystem/Ship Logs/LostFog_logs.xml",
+		"spriteFolder": "planets/assets/LostFogLogs/",
+		"mapMode": {
+		  "invisibleWhenHidden": false,
+		  "revealedSprite": "planets/assets/pool_ss.png",
+		  "scale": 5
+		}
+	},
+	
 	"Spawn": {
 		"playerSpawnPoint": {
-			"x": 400,
-			"y": 0,
+			"x": 0,
+			"y": 350,
 			"z": 0
 		},
 		"shipSpawnPoint": {
-			"x": 400,
-			"y": 0,
+			"x": 0,
+			"y": 350,
 			"z": 0
 		}
 	},
@@ -26,62 +37,18 @@
 	"Orbit": {
 		"isStatic": true
 	},
-	"AmbientLights": [
-		{
-			"intensity": 0,
-			"tint": {
-				"r": 100,
-				"g": 100,
-				"b": 100,
-				"a": 255
-			}
-		},
-		{
-			"outerRadius": 600,
-			"innerRadius": 450,
-			"intensity": 0,
-			"tint" : 
-			{
-				"r" : 255,
-				"g" : 32,
-				"b" : 32,
-				"a" : 255
-			}
-		}
-	],
 	"HeightMap": {
-		"heightMap": "planets/assets/nominatedanomaly_h.png",
+		"heightMap": "planets/assets/lostfog_h.png",
 		"textureMap": "planets/assets/nominatedanomaly_present.png",
-		"minHeight": 400,
-		"maxHeight": 500,
+		"minHeight": 350,
+		"maxHeight": 450,
 		"resolution": 612
 	},
 	"Atmosphere": {
-		"useAtmosphereShader": true,
 		"hasOxygen": true,
-		"atmosphereSunIntensity": 1,
 		"size": 600,
 		"fogSize": 600,
 		"fogDensity": 12,
-		"clouds": {
-			"cloudsPrefab": "quantumMoon",
-			"innerCloudRadius": 550,
-			"outerCloudRadius": 600,
-			"texturePath": "planets/assets/clouds/hindering_skies.png",
-			"unlit": true,
-			"tint": {
-				"r": 255,
-				"g": 255,
-				"b": 255,
-				"a": 200,
-			}
-		},
-		"atmosphereTint": {
-			"r": 255,
-			"g": 255,
-			"b": 100,
-			"a": 255
-		},
 		"fogTint": {
 			"r": 255,
 			"g": 255,
@@ -90,32 +57,486 @@
 		}
 	},
 	
+	
+	
 	"Props": {
-		"details": [
+		"scatter" : [
+			//{"path" : "RingWorld_Body/Sector_RingInterior/Sector_Zone1/Props_Zone1/Zone_1_Trees/OtherComponentsGroup/Trees_Zone1/Tree_RW_L_Var", "count" : 100},
+			//{"path" : "RingWorld_Body/Sector_RingInterior/Sector_Zone1/Props_Zone1/Zone_1_Trees/OtherComponentsGroup/Trees_Zone1/Tree_RW_M_Straight", "count" : 100},
+			//{"path" : "RingWorld_Body/Sector_RingInterior/Sector_Zone1/Props_Zone1/Zone_1_Trees/OtherComponentsGroup/Trees_Zone1/Tree_RW_M_Stumpy_Var", "count" : 100},
+			//{"path" : "RingWorld_Body/Sector_RingInterior/Sector_Zone1/Props_Zone1/Zone_1_Trees/OtherComponentsGroup/Trees_Zone1/Tree_RW_S_A_Var", "count" : 100},	
+			//{"path" : "RingWorld_Body/Sector_RingInterior/Sector_Zone1/Props_Zone1/Zone_1_Trees/OtherComponentsGroup/Trees_Zone1/Tree_RW_S_C_Var", "count" : 100},	
+			//{"path" : "RingWorld_Body/Sector_RingInterior/Sector_Zone1/Props_Zone1/Zone_1_Trees/OtherComponentsGroup/Trees_Zone1/Tree_RW_S_B_Var", "count" : 100},	
+			
+			//{"path" : "RingWorld_Body/Sector_RingInterior/Sector_Zone_1to2/Props_Zone_1to2/Trees_1to2/OtherComponentsGroup/Tree_RW_M_Stumpy", "count" : 500},	
+			//{"path" : "TimberHearth_Body/Sector_TH/Sector_QuantumGrove/Interactables_QuantumGrove/QuantumGrove_QuantumSockets/RootsSockets/Socket (4)/QuantumRoots_Proxy/OLD_Tree_TH_RootStump", "count" : 500},	
+			//{"path" : "DB_PioneerDimension_Body/Sector_PioneerDimension/Props_PioneerDimension/OtherComponentsGroup/Tree_TH_Stump (1)", "count" : 500},	
+			//{"path" : "TimberHearth_Body/Sector_TH/Sector_NomaiCrater/Props_NomaiCrater/OtherComponentsGroup/Tree_TH_Stump_Jagged (1)", "count" : 500},	
+			//{"path" : "TimberHearth_Body/Sector_TH/Sector_NomaiCrater/Props_NomaiCrater/OtherComponentsGroup/Tree_TH_SequoiaStump (1)", "count" : 500},	
+			//{"path" : "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_3/Crater_3_Sapling/QSapling/Tree_TH_Sapling", "count" : 500},	
+			//{"path" : "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_1/Crater_1_QRedwood/QRedwood (2)/Prefab_TH_Redwood", "count" : 500},	
+			//{"path" : "BrittleHollow_Body/Sector_BH/Sector_GravityCannon/Props_GravityCannon/OtherComponentsGroup/VisibleFrom_BH/Prefab_Tree_BH_Bristle_Straight", "count" : 500},	
+			
+			
+				
+			{"assetBundle": "planets/assetbundle/tree", "path": "Assets/prefabsTomb/tree/TreeCommon.prefab", "seed" : 67, "count" : 1250},
+			
+			{"path" : "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_Surface/Surface_AlpineClump_S/Surface_AlpineClump_S/BatchedGroup", "count" : 500}
+		],
+		
+		
+		"signals": [
+      {
+        "name": "Heart of the Planet",
+        "frequency": "Electromagnetic Waves",
+        "audio": "planets/assets/THIce.mp3",
+        "onlyAudibleToScope": true,
+        "position": {
+          "x": 400,
+          "y": 0,
+          "z": 0
+        },
+        "detectionRadius": 500,
+        "identificationRadius": 30,
+        "sourceRadius": 7
+      },
+	  {
+        "name": "Heart of the what",
+        "frequency": "Electromagnetic Waves",
+        "audio": "planets/assets/gangnam.ogg",
+        "onlyAudibleToScope": true,
+        "position": {
+          "x": -400,
+          "y": 0,
+          "z": 0
+        },
+        "detectionRadius": 500,
+        "identificationRadius": 30,
+        "sourceRadius": 7
+      },
+	   {
+        "name": "Heart of the ass",
+        "frequency": "Electromagnetic Waves",
+        "audio": "planets/assets/gangnam.ogg",
+        "onlyAudibleToScope": true,
+        "position": {
+          "x": 0,
+          "y": 400,
+          "z": 0
+        },
+        "detectionRadius": 500,
+        "identificationRadius": 30,
+        "sourceRadius": 7
+      },
+	  
+	  {
+        "name": "Gann style",
+        "frequency": "Electromagnetic Waves",
+        "audio": "planets/assets/gangnam.ogg",
+        "onlyAudibleToScope": true,
+        "position": {
+          "x": 275,
+          "y": 275,
+          "z": 0
+        },
+        "detectionRadius": 500,
+        "identificationRadius": 30,
+        "sourceRadius": 7
+      }
+	],
+		
+	"details": [
+			
 			{
-				"assetBundle": "planets/assetbundle/simpletemperaturezone",
-				"path": "Assets/PREFABS/simpletemperaturezone.prefab",
+				"assetBundle": "planets/assetbundle/grappinslidecolpivot",
+				"path": "Assets/PREFABS/grappinslidecolpivot.prefab",
 				"position": {
 					"x": 400,
-					"y": 0,
+					"y": 16,
+					"z": 2
+				},
+				"scale": 1,
+				"rename": "SPXgrappinslidecolpivot",
+				"alignRadial": true
+			},
+			
+			{
+				"assetBundle": "planets/assetbundle/spxempty",
+				"path": "Assets/PREFABS/spxempty.prefab",
+				"position": {
+					"x": -17,
+					"y": 449,
+					"z": 14
+				},
+				"scale": 1,
+				"rename": "SPXemptyOG",
+				"alignRadial": true
+			},
+			
+			{
+				"assetBundle": "planets/assetbundle/spxempty",
+				"path": "Assets/PREFABS/spxempty.prefab",
+				"position": {
+					"x": -18,
+					"y": 449,
+					"z": -3
+				},
+				"scale": 1,
+				"rename": "SPXemptyDos",
+				"alignRadial": true
+			},
+			
+			{
+				"assetBundle": "planets/assetbundle/tree", 
+				"path": "Assets/prefabsTomb/tree/TreeCommon.prefab",
+				"position": {
+					"x": -20,
+					"y": 449,
+					"z": -5
+				},
+				"scale": 1,
+				"rename": "SPXemptyWTF",
+				"alignRadial": true
+			},
+			
+			{
+				"assetBundle": "planets/assetbundle/tree", 
+				"path": "Assets/prefabsTomb/tree/TreeSpecial.prefab",
+				"position": {
+					"x": -6,
+					"y": 348,
+					"z": 26
+				},
+				"scale": 1,
+				"rename": "SPXemptySPECIAL",
+				"alignRadial": true
+			},
+			
+			
+			
+			{
+				"assetBundle": "planets/assetbundle/spxinteractreceiver",
+				"path": "Assets/PREFABS/spxinteractreceiver.prefab",
+				"position": {
+					"x": -18,
+					"y": 449,
+					"z": -3
+				},
+				"scale": 1,
+				"rename": "SpxInteract",
+				"alignRadial": true
+			},
+			
+			{
+				"assetBundle": "planets/assetbundle/atombworldtale",
+				"path": "Assets/ATombWorldTale/GrappinMoving.prefab",
+				"position": {
+					"x": 0,
+					"y": 450,
 					"z": 15
 				},
 				"scale": 1,
-				"rename": "SPXWarmEnough",
+				"rename": "SPX_GRAPPIN_MOVE",
 				"alignRadial": true
 			},
+			
 			{
-				"assetBundle": "planets/assetbundle/simpletemperaturezone",
-				"path": "Assets/PREFABS/simpletemperaturezone.prefab",
+				"assetBundle": "planets/assetbundle/atombworldtale",
+				"path": "Assets/ATombWorldTale/GrappinSimplest.prefab",
 				"position": {
-					"x": 400,
-					"y": 15,
-					"z": 0
+					"x": 0,
+					"y": 450,
+					"z": 15
 				},
 				"scale": 1,
-				"rename": "SpxVeryCold",
+				"rename": "SPX_GRAPPIN_PLEASE",
 				"alignRadial": true
 			},
+			
+			{
+				"path" : "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/Crater_3/Crater_3_Sapling/QSapling/Tree_TH_Sapling",
+				"rename": "SPXFogTree",
+				"keepLoaded": true,
+				"position": {
+					"x": 397,
+					"y": 30,
+					"z": 30
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			
+			{
+				"path" : "CaveTwin_Body/Sector_CaveTwin/Geometry_CaveTwin/OtherComponentsGroup/Prefab_HEA_ChertShip",
+				"rename": "ChertCamp",
+				"keepLoaded": true,
+				"position": {"x": 107.6358, "y": 436.9377, "z": -0.02101055},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			{
+				"path" : "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_Lakebed/Interactables_Lakebed/Traveller_HEA_Chert",
+				"rename": "ChertCamp",
+				"keepLoaded": true,
+				  "position": { "x": 102.106323, "y": 438.250122, "z": 3.3368926 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"alignRadial": true
+			},
+			
+			{
+				"path" : "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_Lakebed/Volumes_Lakebed/Signal_Drums",
+				"rename": "ChertCamp2",
+				"keepLoaded": true,
+				  "position": { "x": 102.106323, "y": 438.250122, "z": 3.3368926 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"alignRadial": true
+			},
+			
+			{
+				"path" : "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Characters_LowerVillage/Villager_HEA_Gneiss",
+				"rename": "ChertCamp",
+				"keepLoaded": true,
+				"parentPath": "Sector/ChertCamp2",
+				"isRelativeToParent": true,
+				"position": { "x": 0, "y": 2, "z": 0 },
+				"rotation": { "x": 0, "y": 0, "z": 0 },
+				"alignRadial": true
+			},
+			
+			
+			
+			{
+				"path" : "Moon_Body/Sector_THM/Characters_THM/Villager_HEA_Esker",
+				"rename": "EskerCamp",
+				"keepLoaded": true,
+				"position": {
+					"x": 405,
+					"y": 62,
+					"z": 60
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			{
+				"path" : "Moon_Body/Sector_THM/Interactables_THM/Props_HEA_MarshmallowCanBad",
+				"rename": "EskerCamp",
+				"keepLoaded": true,
+				"position": {
+					"x": 403,
+					"y": 62,
+					"z": 60
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			{
+				"path" : "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Characters_Crossroads/Traveller_HEA_Riebeck",
+				"rename": "RiebeckCamp",
+				"keepLoaded": true,
+				"position": {
+					"x": 403,
+					"y": 62,
+					"z": 60
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			{
+				"path" : "BrittleHollow_Body/Sector_BH/Sector_SouthHemisphere/Sector_SouthPole/Interactables_SouthPole/VisibleFrom_BH/RiebeckShip",
+				"rename": "RiebeckCamp",
+				"keepLoaded": true,
+				"position": {
+					"x": 413,
+					"y": 62,
+					"z": 62
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			{
+				"path" : "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Characters_Crossroads/Signal_Banjo",
+				"rename": "RiebeckCamp",
+				"keepLoaded": true,
+				"position": {
+					"x": 413,
+					"y": 62,
+					"z": 62
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			
+			
+			
+			{
+				"path" : "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/Traveller_HEA_Gabbro",
+				"rename": "GabbroCamp",
+				"keepLoaded": true,
+				"position": {
+					"x": 423,
+					"y": 62,
+					"z": 62
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			
+			{
+				"path" : "GabbroShip_Body",
+				"rename": "GabbroCamp",
+				"keepLoaded": true,
+				"position": {
+					"x": 427,
+					"y": 62,
+					"z": 62
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			{
+				"path" : "GabbroIsland_Body/Sector_GabbroIsland/Interactables_GabbroIsland/Signal_Flute",
+				"rename": "GabbroCamp",
+				"keepLoaded": true,
+				"position": {
+					"x": 427,
+					"y": 62,
+					"z": 62
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			
+			
+			{
+				"path" : "DB_PioneerDimension_Body/Sector_PioneerDimension/Interactables_PioneerDimension/Pioneer_Characters",
+				"rename": "FeldsparCamp",
+				"keepLoaded": true,
+				"position": {
+					"x": 427,
+					"y": 60,
+					"z": 62
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			{
+				"path" : "DB_PioneerDimension_Body/Sector_PioneerDimension/Interactables_PioneerDimension/Pioneer_Characters",
+				"rename": "FeldsparCamp",
+				"keepLoaded": true,
+				"position": {
+					"x": 427,
+					"y": 62,
+					"z": 60
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			{
+				"path" : "FeldsparShip_Body",
+				"rename": "FeldsparCamp",
+				"keepLoaded": true,
+				"position": {
+					"x": 427,
+					"y": 60,
+					"z": 60
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			{
+				"path" : "Ship_Body/Module_Supplies/PortableCampfireSocket",
+				"rename": "SPXWoodLogs",
+				"keepLoaded": true,
+				"position": {
+				"x": 400,
+				"y": 25,
+				"z": 25
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"alignRadial": true
+			},
+			
+			
+
 			
 			{
 
@@ -123,9 +544,10 @@
 				"rename": "SPXFogAxe",
 				"keepLoaded": true,
 				"position": {
-					"x": 400,
-					"y": 1,
-					"z": 0
+					
+					"x": -18,
+					"y": 350,
+					"z": 2
 				},
 				"rotation": {
 					"x": 0,
@@ -138,8 +560,8 @@
 					"holdOffset": {"x": 0.05, "y": -0.15, "z": -0.1},
 					"holdRotation": {"x": 230, "y": 0, "z": 0},
 					"dropOffset": {"x": 0, "y": 0.4, "z": 0},
-					"pickupAudio": "Raft_Impact_Light",
-					"dropAudio": "Raft_Impact_Medium"
+					"pickupAudio": "TH_WoodCarving",
+					"dropAudio": "Raft_Impact_Light"
 					
 					
 					///Raft_Impact_Heavy Couper du bois		Raft_Impact_Medium Couper du bois moins violent		Raft_Impact_Light	TH_WoodCarving
@@ -258,7 +680,7 @@
 					"itemType": "Decoration", 
 					"holdOffset": {"x": 0.2, "y": 0, "z": 0.4},
 					"holdRotation": {"x": 0, "y": 250, "z": 0},
-					"dropOffset": {"x": 0, "y": 0.35, "z": 0},
+					"dropOffset": {"x": 0, "y": 0.3, "z": 0},
 					"colliderRadius": 0.5,
 					"interactRange": 3,
 					"pickupAudio": "TH_ProjectorActivate",
@@ -383,7 +805,7 @@
 				///Techno	Props_HEA_Projector_StelliteDish		radiotower_radar_dish_A		radiotower_radar_dish_B		radiocabin_solarpanels		radiocabin_generator	Props_HEA_Radio
 				///Techno 	Prefab_HEA_FuelTank (1)		Props_HEA_MarshmallowCanBad
 				///Autre	Prop_HEA_Paper		Props_HEA_Nail2		ExteriorEntrance_Flag		ExteriorTopFloor_Flag		radiocabin_ropenet		Props_HEA_RockingChair
-				
+				///D
 				
 				
 				"rename": "SPXHatchling",
@@ -449,8 +871,75 @@
 			}
 		]
 	},
-	
+	"entryLocation": [
+      {
+        "id": "CONCERT_HALL_ENTRY_FC",
+        "parentPath": "Sector/SPXemptyOG",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      },
+	  
+	  {
+        "id": "CHERT_SHIP_LOGS_FC",
+        "parentPath": "Sector/SPXemptyOG",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0,
+          "y": 450,
+          "z": 0
+        }
+      }
+
+	],
 	"Volumes": {
+		
+		"fluidVolumes": [
+		  {
+			"rename": "waterVol",
+			"layer": 0,
+			"priority": 1,
+			"shape": {
+					"type": "sphere",
+					"radius": 1
+			},
+			"type": "water",
+			"position": {
+			  "x": 0,
+			  "y": 0,
+			  "z": 0
+			}
+		  }
+		],
+		"revealVolumes": [
+		  {
+			"rename": "story_area_reveal_vol2",
+			"radius": 30,
+			"revealOn": "enter",
+			"revealFor": "both",
+			"reveals": [ "CHERT_SHIP_WEREABOUTS", "RIEBECK_SHIP_WEREABOUTS", "GABBRO_SHIP_WEREABOUTS", "CRASH_SHIP_WEREABOUTS", "GABBRO_SHIP_RUMOR_FC", "SPECICES_EXPLOSION_FACT1", "SPECICES_PHYSIC_FACT1", "SPECICES_PLANT_FACT1", "SPECICES_WATER_FACT1" ],
+			"position": {
+			  "x": 0,
+			  "y": 450,
+			  "z": 0
+			}
+		  },
+		  {
+        "reveals": [ "CHERT_SHIP_WEREABOUTS", "RIEBECK_SHIP_WEREABOUTS", "GABBRO_SHIP_WEREABOUTS", "SPECICES_EXPLOSION_FACT1", "SPECICES_PHYSIC_FACT1", "SPECICES_PLANT_FACT1", "SPECICES_WATER_FACT1"  ],
+			"rename": "story_area_kill_me",
+			"radius": 500,
+			"revealOn": "observe",
+			"maxDistance": 500,
+			"position": {
+			  "x": 0,
+			  "y": 450,
+			  "z": 0
+			}
+		  }
+		],
 		
 		"interferenceVolumes": [
 			{
@@ -464,9 +953,15 @@
 		],
 		"hazardVolumes": [
 			{
-				"radius": 450,
-				"damagePerSecond": 5,
-				"type": "none"
+				"radius": 5,
+				"rename": "electricTree",
+				"position": {
+				   "x": -6.844294, "y": 0, "z": 0
+				},
+				"firstContactDamageType": "electrical",
+				"firstContactDamage": 20,
+				"damagePerSecond" : 0,
+				"type": "electricity"
 			}
 		],
 		"speedTrapVolumes": [

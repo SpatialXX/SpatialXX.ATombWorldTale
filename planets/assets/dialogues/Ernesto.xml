@@ -1,0 +1,278 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Ernesto</NameField>
+	
+	<DialogueNode>
+		<Name>GREETINGS</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page><![CDATA[<i>Hey.</i>]]></Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Ernesto!</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>START</Name>
+		<Dialogue>
+			<Page>I too, am in this mod.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Can I see a magic trick?</Text>
+				<DialogueTarget>MAGIC</DialogueTarget>
+			</DialogueOption>
+			
+			<DialogueOption>
+				<Text>Can you give me a fact?</Text>
+				<DialogueTarget>FACTS</DialogueTarget>
+			</DialogueOption>
+			
+			<DialogueOption>
+				<Text>How can I get as good as you at poker?</Text>
+				<DialogueTarget>GAMBLING</DialogueTarget>
+			</DialogueOption>
+			
+			<DialogueOption>
+				<Text>Bye</Text>
+			</DialogueOption>
+			
+		</DialogueOptionsList>
+		
+	
+	</DialogueNode>
+	
+	
+	
+	<!-- GAMBLING -->
+	
+	<DialogueNode>
+		<Name>GAMBLING</Name>
+		<Dialogue>
+			<Page>Well a good friend of mine would have said, get on Estrogen. <![CDATA[<Pause/>]]>Now. <![CDATA[<Pause/>]]>It makes you better at gambling.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Do you take some too?</Text>
+				<DialogueTarget>GAMBLING_CON</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>GAMBLING_CON</Name>
+		<Dialogue>
+			<Page>Me? Naaaah. I just count the cards</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>What even is an estrogen?</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	
+	<!-- FACTS -->
+	
+	<DialogueNode>
+		<Name>FACTS</Name>
+		<Dialogue>
+			<Page>A quarter of all your bones is in your feets.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Neat.</Text>
+				<DialogueTarget>FACTS_CON</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>FACTS_CON</Name>
+		<Dialogue>
+			<Page>Vending Machines have a death rate of 13 per year in the universe, which is more than Anglerfish attacks</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Uhhh, I asked only for one fact</Text>
+				<DialogueTarget>FACTS_CON2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>FACTS_CON2</Name>
+		<Dialogue>
+			<Page>In hearthian, the number 4 is the only number to have the same amount of letters as it's numerical value</Page>
+			<Page>We don't know who the inventor of fire hydrant is. The reason being that the patent was destroyed in a fire.</Page>
+			<Page>The connective tissues between fat and muscles is called Fascia and looks like cobweb when pulled out of there.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>What have I unleashed</Text>
+				<DialogueTarget>FACTS_CON3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>FACTS_CON3</Name>
+		<Dialogue>
+			<Page>Me looking up stupid facts lmao</Page>
+			<Page>Tumors can grow most organs, even teeths or hairs</Page>
+			<Page>Hydrogen, given enough time, turns into people, or anything really.</Page>
+			<Page>There's a legal murder zone in Dark Bramble. It's called "The Zone of Death"</Page>
+			<Page>-40C and -40F are the same temperature</Page>
+			<Page>The food that has the closest taste to hearthian flesh is Jumbo's Marshmallows</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>HA! I KNEW IT!</Text>
+				<DialogueTarget>FACTS_CON4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>FACTS_CON4</Name>
+		<Dialogue>
+			<Page>You have no muscles in your fingers. The muscles to make them move are in your forearms.</Page>
+			<Page>If you put an orange in water it floats, but if you peel it, it sinks.</Page>
+			<Page>In nomai's, the first organ to develop in the womb is the anus, so they are all assholes at the end of the day.</Page>
+			<Page>Small hearthians can survive terminal velocity so no matter how high they fall from, they'll probably survive</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Yeah, I was jumping from cliffs all the time when I was younger, a shame how fragile I became now.</Text>
+				<DialogueTarget>FACTS_CON5</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>FACTS_CON5</Name>
+		<Dialogue>
+			<Page>If you ate 40 000 bananas in 10 minute you would die of radioactive poisoning</Page>
+			<Page>The schwarzschild radius of a hearthian is 10 to the -23 power centimers. That means that if an average sized hearthian is pressed into a sphere with a radius of 0.<![CDATA[<Pause/>]]>000<![CDATA[<Pause/>]]>000<![CDATA[<Pause/>]]>000<![CDATA[<Pause/>]]>000<![CDATA[<Pause/>]]>000<![CDATA[<Pause/>]]>000<![CDATA[<Pause/>]]>000<![CDATA[<Pause/>]]>01 centimeters<![CDATA[<Pause/>]]>, they'd become a black hole</Page>
+			<Page>Babies are hard to bully since they don't have kneecaps to break.</Page>
+			<Page>Printer ink is more expensive than blood.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>That's damn true.</Text>
+				<DialogueTarget>FACTS_CON6</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>FACTS_CON6</Name>
+		<Dialogue>
+			<Page>An hearthian head needs 3 rotation to take it off</Page>
+			<Page>In 5 billion years the sun will expand into a red giant and engulf the hearth, crazy huh</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Uhhhm, about that...</Text>
+				<DialogueTarget>FACTS_CON7</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>FACTS_CON7</Name>
+		<Dialogue>
+			<Page>An outdated fact?!</Page>
+			<Page>Well you win <![CDATA[<i>this</i>]]> time hatchling, but i'll get you one day!</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+	<!-- MAGIC -->
+	
+	<DialogueNode>
+		<Name>MAGIC</Name>
+		<Dialogue>
+			<Page>Hmmm <![CDATA[<Pause/>]]>.<![CDATA[<Pause/>]]>.<![CDATA[<Pause/>]]>.<![CDATA[<Pause/>]]> yes i reckon i can do a magic, give me a sec...</Page>
+			<Page><![CDATA[<Pause/>]]>.<![CDATA[<Pause/>]]>.<![CDATA[<Pause/>]]>.</Page>
+			<Page>TA-DA!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>uhhh...?</Text>
+				<DialogueTarget>MAGIC_CON</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>MAGIC_CON</Name>
+		<Dialogue>
+			<Page>Oh... You didn't saw? Ah yes I forgot, you're only some line of code, so you can't see what I'm doing in the real life... That must be sooo sad.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>No actually I'm a real person</Text>
+				<DialogueTarget>MAGIC_DISBILIEF</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Yes, I'm really sad about this</Text>
+				<DialogueTarget>MAGIC_REGRET</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Still, can I know what you did?</Text>
+				<DialogueTarget>MAGIC_KNOWLEDGE</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+		
+	<DialogueNode>
+		<Name>MAGIC_REGRET</Name>
+		<Dialogue>
+			<Page>Oh sorry about this, do you want some cake I made ?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Yes.</Text>
+				<DialogueTarget>CAKE_LIE</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Yes.</Text>
+				<DialogueTarget>CAKE_LIE</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CAKE_LIE</Name>
+		<Dialogue>
+			<Page>HAHAHHAHAHAAHAHAHA IT WAS A LIE, I'M A FISH, I CAN'T DO CAKE!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>You monster.</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>MAGIC_KNOWLEDGE</Name>
+		<Dialogue>
+			<Page>Look behind you.</Page>
+		</Dialogue>
+		<ConditionToSet>EXAMPLES_INSULT</ConditionToSet>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>MAGIC_DISBILIEF</Name>
+		<Dialogue>
+			<Page>Haha yes of course, some programmer just wrote what you just said, stop being delusional</Page>
+		</Dialogue>
+	</DialogueNode>
+
+
+</DialogueTree>

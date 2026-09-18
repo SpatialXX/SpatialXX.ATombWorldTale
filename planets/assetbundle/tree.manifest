@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2842608341
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7e75c350527d43e95aa77c116a2efbd2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d9b34ffd0b2e2e8eb4ad2ca6feb3402c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 478483094, guid: c826f8c462ba3144dac8244eba5ef2e6, type: 3}
+- Class: 114
+  Script: {fileID: -2142052802, guid: c826f8c462ba3144dac8244eba5ef2e6, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/prefabsTomb/tree/TreeSpecial.prefab
+- Assets/prefabsTomb/tree/TreeCommon.prefab
+Dependencies: []

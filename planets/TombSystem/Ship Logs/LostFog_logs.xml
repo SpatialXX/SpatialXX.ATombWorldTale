@@ -1,0 +1,156 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>LOST_FOG</ID>
+
+  <!--Entry for the concert hall -->
+  <Entry>
+    <ID>CONCERT_HALL_ENTRY_FC</ID>
+    <Name>Concert Hall</Name>
+    <Curiosity>HEARTHIANS_CAMPS</Curiosity>
+
+    <!--Learn about the vocal organs-->
+    <ExploreFact>
+      <ID>DREE_SINGING_FACT_FC</ID>
+      <IgnoreMoreToExplore/>
+      <Text>The Nomai theorized that the aliens may have specialized singing organs.</Text>
+    </ExploreFact>
+
+    <!--One of the Nomai be translating-->
+    <ExploreFact>
+      <ID>CONCERT_MISSED_FACT_FC</ID>
+      <Text>One of the Nomai did not attend the show, as he was busy translating the alien's language in a lab.</Text>
+    </ExploreFact>
+
+    <!--There sure do be bells-->
+    <ExploreFact>
+      <ID>CONCERT_BELLS_FACT_FC</ID>
+      <Text>There are five large bells near the stage, with a hexagonal slot above each. The leftmost bell is broken on the ground.</Text>
+    </ExploreFact>
+
+    <!--I'm illiterate-->
+    <ExploreFact>
+      <ID>CONCERT_DREE_TEXT_FACT_FC</ID>
+      <Text>There is text alluding to a way to fix gravity crystals, but not all of the text is written in Nomai.</Text>
+    </ExploreFact>
+
+    <!--Combination-->
+    <ExploreFact>
+      <ID>CONCERT_COMBO_FACT_FC</ID>
+      <Text>To fix the gravity crystal, it needs to be socketed into one of the hexagonal slots. Then three bells need to be rung: the one two spots to the left, the one directly to the right, and finally the one directly below.</Text>
+    </ExploreFact>
+
+    <!--Success!-->
+    <ExploreFact>
+      <ID>CONCERT_SUCCESS_FACT_FC</ID>
+      <Text>I was able to fix a gravity crystal!</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <Entry>
+    <ID>CHERT_SHIP_LOGS_FC</ID>
+    <Name>Chert Ship</Name>
+    <Curiosity>HEARTHIANS_CAMPS</Curiosity>
+
+    <ExploreFact>
+      <ID>CHERT_SHIP_WEREABOUTS</ID>
+      <IgnoreMoreToExplore/>
+      <Text>Chert Ship missing</Text>
+    </ExploreFact>
+  </Entry>
+  
+  
+   <Entry>
+    <ID>RIEBECK_SHIP_LOGS_FC</ID>
+    <Name>Riebeck Ship</Name>
+    <Curiosity>HEARTHIANS_CAMPS</Curiosity>
+
+    <ExploreFact>
+      <ID>RIEBECK_SHIP_WEREABOUTS</ID>
+      <IgnoreMoreToExplore/>
+      <Text>Riebeck Ship missing</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <Entry>
+    <ID>GABBRO_SHIP_LOGS_FC</ID>
+    <Name>Gabbro Ship</Name>
+    <Curiosity>HEARTHIANS_CAMPS</Curiosity>
+
+    <ExploreFact>
+      <ID>GABBRO_SHIP_WEREABOUTS</ID>
+      <IgnoreMoreToExplore/>
+      <Text>Gabbro Ship missing</Text>
+    </ExploreFact>
+	
+	<RumorFact>
+        <ID>GABBRO_SHIP_RUMOR_FC</ID>
+        <SourceID>CRASH_SITE_LOGS_FC</SourceID>
+        <Text>Supposedly, Gabbro might have access to weapons of mass destruction.</Text>
+    </RumorFact>
+  </Entry>
+  
+   <Entry>
+    <ID>CRASH_SITE_LOGS_FC</ID>
+    <Name>Crater Camp</Name>
+    <Curiosity>HEARTHIANS_CAMPS</Curiosity>
+
+    <ExploreFact>
+      <ID>CRASH_SHIP_WEREABOUTS</ID>
+      <IgnoreMoreToExplore/>
+      <Text>Crashed Ship missing landing lol</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <Entry>
+    <ID>SPECICES_EXPLOSION_LOGS_FC</ID>
+    <Name>Explosion</Name>
+    <Curiosity>HEARTHIANS_CAMPS</Curiosity>
+
+    <ExploreFact>
+      <ID>SPECICES_EXPLOSION_FACT1</ID>
+      <IgnoreMoreToExplore/>
+      <Text>Crashed Ship missing landing lol</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <Entry>
+    <ID>SPECICES_PHYSIC_LOGS_FC</ID>
+    <Name>Physic</Name>
+    <Curiosity>HEARTHIANS_CAMPS</Curiosity>
+
+    <ExploreFact>
+      <ID>SPECICES_PHYSIC_FACT1</ID>
+      <IgnoreMoreToExplore/>
+      <Text>Crashed Ship missing landing lol</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <Entry>
+    <ID>SPECICES_PLANT_LOGS_FC</ID>
+    <Name>Plants</Name>
+    <Curiosity>HEARTHIANS_CAMPS</Curiosity>
+
+    <ExploreFact>
+      <ID>SPECICES_PLANT_FACT1</ID>
+      <IgnoreMoreToExplore/>
+      <Text>Crashed Ship missing landing lol</Text>
+    </ExploreFact>
+  </Entry>
+  
+  <Entry>
+    <ID>SPECICES_WATER_LOGS_FC</ID>
+    <Name>Water</Name>
+    <Curiosity>HEARTHIANS_CAMPS</Curiosity>
+
+    <ExploreFact>
+      <ID>SPECICES_WATER_FACT1</ID>
+      <IgnoreMoreToExplore/>
+      <Text>Crashed Ship missing landing lol</Text>
+    </ExploreFact>
+  </Entry>
+  
+  
+  
+  
+  
+  
+</AstroObjectEntry>
